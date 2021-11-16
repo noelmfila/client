@@ -1,5 +1,5 @@
 <div class="row" *ngIf="member">
-  <div class="col-4">
+ <div class="col-4">
     <div class="card">
       <img src="{{member.photoUrl || './assets/user.png'}}" alt="{{member.knownAs}}" class
       class="card-img-top img-thumbnail">
@@ -23,10 +23,12 @@
       </div>
       <div class="card-foot">
         <div class="btn-group d-flex">
-          <button class="btn btn-primary">Like</button></div>
-          <button class="btn btn-success">Message</button></div>
+          <button class="btn btn-primary">Like</button>
+          <button class="btn btn-success">Message</button>
+        </div>
       </div>
   </div>
+ </div>
   <div class="col-8">
     <tabset class="member-tabset">
       <tab heading="About {{member.knownAs}}">
